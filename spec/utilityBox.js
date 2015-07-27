@@ -2,32 +2,32 @@
 
 
 //TYPE CHECKS
+
+
 describe('isArray', function () {
   'use strict';
   it('should return a boolean', function () {
-    expect(isArray([])).to.be.a('boolean')
+    expect(_.isArray([])).to.be.a('boolean')
   });
   it('should return true if value passed in is an array', function () {
-    expect(isArray([1,2,3])).to.equal(true);
+    expect(_.isArray([1,2,3])).to.equal(true);
   });
   it('should return false if value passed in is not an array', function () {
-    expect(isArray(1)).to.equal(false);
+    expect(_.isArray(1)).to.equal(false);
   });
 
 });
 
-describe('isArray', function () {
+describe('isBoolean', function () {
   'use strict';
-  it('should return a boolean', function () {
-    expect(isArray([])).to.be.a('boolean')
+  it('should return a boolean value', function () {
+    expect(_.isBoolean(1)).to.be.a('boolean');
   });
-  it('should return true if value passed in is an array', function () {
-    expect(isArray([1,2,3])).to.equal(true);
+  it('should return true if value passed in is a boolean value', function () {
+    expect(_.isBoolean(false)).to.equal(true);
   });
-  it('should return false if value passed in is not an array', function () {
-    expect(isArray(1)).to.equal(false);
+  it('should return false if value passed in is not a boolean value', function () {
+    expect(_.isBoolean(1)).to.equal(false);
   });
 
-
-  // Add more assertions here
 });
