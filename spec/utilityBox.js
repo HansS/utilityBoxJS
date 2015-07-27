@@ -75,5 +75,19 @@ describe('isObject', function () {
 
 });
 
+describe('isString', function () {
+  'use strict';
+  it('should return a boolean value', function () {
+    expect(_.isString("test")).to.be.a('boolean');
+  });
+  it('should return true if value passed in is a string', function () {
+    expect(_.isString("1")).to.equal(true);
+  });
+  it('should return false if value passed in is not a function', function () {
+    expect(_.isString(1)).to.equal(false);
+  });
+
+});
+
 
 
