@@ -32,3 +32,10 @@ _.isNumber = function(value) {
   }
   return false;
 }
+
+_.isObject = function(value) {
+  if(Object.prototype.toString.call(value) === "[object Object]"){
+    return true;
+  }
+  return false;
+}
