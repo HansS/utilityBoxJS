@@ -66,10 +66,10 @@ describe('isObject', function () {
   it('should return a boolean value', function () {
     expect(_.isObject("test")).to.be.a('boolean');
   });
-  it('should return true if value passed in a number', function () {
+  it('should return true if value passed in a object', function () {
     expect(_.isObject({one:1})).to.equal(true);
   });
-  it('should return false if value passed in is not a function', function () {
+  it('should return false if value passed in is not a object', function () {
     expect(_.isObject("object")).to.equal(false);
   });
 
