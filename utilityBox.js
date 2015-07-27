@@ -51,3 +51,8 @@ _.isFalsey = function(value){
   if(!Boolean(value)) return true;
   return false;
 }
+
+_.isTruthy = function(value){
+  if(Boolean(value)) return true;
+  return false; 
+}
