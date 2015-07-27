@@ -31,3 +31,18 @@ describe('isBoolean', function () {
   });
 
 });
+
+
+describe('isFunction', function () {
+  'use strict';
+  it('should return a boolean value', function () {
+    expect(_.isFunction("test")).to.be.a('boolean');
+  });
+  it('should return true if value passed in a function', function () {
+    expect(_.isFunction(function(){})).to.equal(true);
+  });
+  it('should return false if value passed in is not a function', function () {
+    expect(_.isFunction(1)).to.equal(false);
+  });
+
+});
