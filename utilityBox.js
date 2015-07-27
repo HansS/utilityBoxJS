@@ -18,7 +18,7 @@ _.isBoolean = function(value) {
   return false;
 }
 
-var isFunction = function(value){
+_.isFunction = function(value){
   if(Object.prototype.toString.call(value) === "[object Function]"){
     return true;
   }
