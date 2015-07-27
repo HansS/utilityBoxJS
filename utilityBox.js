@@ -39,3 +39,10 @@ _.isObject = function(value) {
   }
   return false;
 }
+
+_.isString = function(value){
+  if(Object.prototype.toString.call(value) === "[object String]"){
+    return true;
+  }
+  return false;
+}
