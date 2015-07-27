@@ -11,6 +11,7 @@ _.isArray = function(value) {
   }
   return false;
 }
+
 _.isBoolean = function(value) {
   if(Object.prototype.toString.call(value) === "[object Boolean]"){
     return true;
@@ -20,6 +21,13 @@ _.isBoolean = function(value) {
 
 _.isFunction = function(value){
   if(Object.prototype.toString.call(value) === "[object Function]"){
+    return true;
+  }
+  return false;
+}
+
+_.isNumber = function(value) {
+  if(Object.prototype.toString.call(value) === "[object Number]"){
     return true;
   }
   return false;
