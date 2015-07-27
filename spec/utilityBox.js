@@ -90,4 +90,18 @@ describe('isString', function () {
 });
 
 
+describe('isFalsey', function () {
+  'use strict';
+  it('should return a boolean value', function () {
+    expect(_.isFalsey("test")).to.be.a('boolean');
+  });
+  it('should return true if value passed in is a falsey value', function () {
+    expect(_.isFalsey(0)).to.equal(true);
+  });
+  it('should return false if value passed in is a truthy value', function () {
+    expect(_.isFalsey("1")).to.equal(false);
+  });
+
+});
+
 
