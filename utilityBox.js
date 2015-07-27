@@ -46,3 +46,8 @@ _.isString = function(value){
   }
   return false;
 }
+
+_.isFalsey = function(value){
+  if(!Boolean(value)) return true;
+  return false;
+}
