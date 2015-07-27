@@ -105,3 +105,18 @@ describe('isFalsey', function () {
 });
 
 
+describe('isTruthy', function () {
+  'use strict';
+  it('should return a boolean value', function () {
+    expect(_.isTruthy("test")).to.be.a('boolean');
+  });
+  it('should return true if value passed in is a truthy value', function () {
+    expect(_.isTruthy(0)).to.equal(false);
+  });
+  it('should return false if value passed in is a falsey value', function () {
+    expect(_.isTruthy("1")).to.equal(true);
+  });
+
+});
+
+
