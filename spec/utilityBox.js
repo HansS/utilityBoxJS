@@ -46,3 +46,19 @@ describe('isFunction', function () {
   });
 
 });
+
+describe('isNumber', function () {
+  'use strict';
+  it('should return a boolean value', function () {
+    expect(_.isNumber("test")).to.be.a('boolean');
+  });
+  it('should return true if value passed in a number', function () {
+    expect(_.isNumber(100)).to.equal(true);
+  });
+  it('should return false if value passed in is not a function', function () {
+    expect(_.isNumber("100")).to.equal(false);
+  });
+
+});
+
+
