@@ -1,10 +1,16 @@
 /*! utilityBox.js v0.0.0 - MIT license */
 'use strict';
 
+/*
+Notes: 
+Functions currently work for modern browsers, testing for older browsers planned.
+*/
+
+
+
 var _ = {};
 
-
-
+//TYPE CHECKS
 _.isArray = function(value) {
   if(Object.prototype.toString.call(value) === "[object Array]"){
     return true;
