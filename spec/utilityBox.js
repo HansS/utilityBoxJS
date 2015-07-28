@@ -4,7 +4,7 @@
 //TYPE CHECKS
 
 
-describe('isArray', function () {
+describe('_.isArray', function () {
   'use strict';
   it('should return a boolean', function () {
     expect(_.isArray([])).to.be.a('boolean')
@@ -18,7 +18,7 @@ describe('isArray', function () {
 
 });
 
-describe('isBoolean', function () {
+describe('_.isBoolean', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isBoolean(1)).to.be.a('boolean');
@@ -33,7 +33,7 @@ describe('isBoolean', function () {
 });
 
 
-describe('isFunction', function () {
+describe('_.isFunction', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isFunction("test")).to.be.a('boolean');
@@ -47,7 +47,7 @@ describe('isFunction', function () {
 
 });
 
-describe('isNumber', function () {
+describe('_.isNumber', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isNumber("test")).to.be.a('boolean');
@@ -61,7 +61,7 @@ describe('isNumber', function () {
 
 });
 
-describe('isObject', function () {
+describe('_.isObject', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isObject("test")).to.be.a('boolean');
@@ -75,7 +75,7 @@ describe('isObject', function () {
 
 });
 
-describe('isString', function () {
+describe('_.isString', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isString("test")).to.be.a('boolean');
@@ -90,7 +90,7 @@ describe('isString', function () {
 });
 
 
-describe('isFalsey', function () {
+describe('_.isFalsey', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isFalsey("test")).to.be.a('boolean');
@@ -105,7 +105,7 @@ describe('isFalsey', function () {
 });
 
 
-describe('isTruthy', function () {
+describe('_.isTruthy', function () {
   'use strict';
   it('should return a boolean value', function () {
     expect(_.isTruthy("test")).to.be.a('boolean');
@@ -115,6 +115,18 @@ describe('isTruthy', function () {
   });
   it('should return false if value passed in is a falsey value', function () {
     expect(_.isTruthy("1")).to.equal(true);
+  });
+
+});
+
+describe('_.sum', function () {
+  'use strict';
+  it('should return a number value', function () {
+    expect(_.sum([5,5])).to.be.a('number');
+  });
+
+  it('should return the sum of numbers in array', function () {
+    expect(_.sum([5,5,5])).to.equal(15);
   });
 
 });
