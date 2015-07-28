@@ -10,7 +10,8 @@ Functions currently work for modern browsers, testing for older browsers planned
 
 var _ = {};
 
-//TYPE CHECKS
+/* TYPE CHECKS
+   ========================================================================== */
 _.isArray = function(value) {
   if(Object.prototype.toString.call(value) === "[object Array]"){
     return true;
@@ -61,4 +62,18 @@ _.isFalsey = function(value){
 _.isTruthy = function(value){
   if(Boolean(value)) return true;
   return false; 
+}
+
+
+
+
+
+/* Math Operations
+   ========================================================================== */
+_.sum = function(array) {
+  var total = 0;
+  for(var i = 0; i < array.length; i++) {
+    total += array[i];
+  }
+  return total
 }
