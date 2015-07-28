@@ -84,4 +84,15 @@ _.average = function(array) {
     total += array[i];
   }
   return total / array.length;
+  //TODO: roudn decimals to the tens place
+}
+
+_.isOdd = function(number){
+  if(number % 2 === 1) return true;
+  return false;
+}
+
+_.isEven = function(number) {
+  if(number % 2 === 0) return true;
+  return false
 }
