@@ -2,7 +2,7 @@
 'use strict';
 
 /*
-Notes: 
+Notes:
 Functions currently work for modern browsers, testing for older browsers planned.
 */
 
@@ -61,7 +61,7 @@ _.isFalsey = function(value){
 
 _.isTruthy = function(value){
   if(Boolean(value)) return true;
-  return false; 
+  return false;
 }
 
 
